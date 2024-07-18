@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  background-image:linear-gradient(to right, rgba(255,0,0,1), rgba(255,0,0,0.5));
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-image:linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+  background-color: #6200ea;
+  color: white;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-heading{
+    background-image: url("https://uxwing.com/wp-content/themes/uxwing/download/file-and-folder-type/diary-icon.svg");
+    height:6vh;
+    width: 80vw;
+    border-left: blue;
+    padding: 18px;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    border-style:hiddend;
+    
+}
+header input,
+header button {
+  margin-left: 10px;
+}
+
+main {
+  padding: 2em;
+}
+
+#createNoteSection {
+  background-color: white;
+  padding: 2em;
+  margin-bottom: 2em;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+createNoteSection h2 {
+  margin-top: 0;
+}
+
+createNoteForm input,
+createNoteForm textarea,
+createNoteForm select,
+createNoteForm button {
+  width: 100%;
+  padding: 0.5em;
+  margin: 0.5em 0;
+  border-radius: 1px;
+  box-sizing: border-box;
+}
+
+notesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.note {
+  background-color: red;
+  padding: 1em;
+  border-radius: 15px;
+  box-shadow: 0 2px 4px rgba(255,0, 0, 0);
+  width: calc(33% - 1em);
+  box-sizing: border-box;
+}
+
+.note h2 {
+  margin-top: 0;
+}
+
+.note button {
+  margin-top: 0.5em;
+}
+

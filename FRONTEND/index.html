@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Note Maker</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Note Maker</h1>
+    <input type="text" id="searchInput" placeholder="Search notes">
+    <button id="searchButton">Search</button>
+    <button id="viewArchivedButton">View Archived</button>
+    <button id="viewTrashButton">View Trash</button>
+  </header>
+  <main>
+    <section id="createNoteSection">
+      <h2>Create a New Note</h2>
+      <form id="createNoteForm">
+        <input type="text" id="noteTitle" placeholder="Note Title" required>
+        <textarea id="noteContent" placeholder="Note Content" required></textarea>
+        <input type="text" id="noteTags" placeholder="Tags (comma separated)">
+        <select id="noteBackgroundColor">
+          <option value="">Select Background Color</option>
+          <option value="#ffffff">White</option>
+          <option value="#f28b82">Red</option>
+          <option value="#fbbc04">Yellow</option>
+          <option value="#fff475">Light Yellow</option>
+          <option value="#ccff90">Green</option>
+          <option value="#a7ffeb">Teal</option>
+          <option value="#cbf0f8">Blue</option>
+          <option value="#aecbfa">Light Blue</option>
+          <option value="#d7aefb">Purple</option>
+          <option value="#fdcfe8">Pink</option>
+        </select>
+        <button type="submit">Create Note</button>
+      </form>
+    </section>
+    <section id="notesContainer">
+      <!-- Notes will be displayed here -->
+    </section>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
